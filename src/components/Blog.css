@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Pacifico&family=Slabo+27px&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.blog {
+    width: 100%;
+    height: 105rem;
+}
+
+.blog-dls {
+    width: 100%;
+    height: 40rem;
+    background-color: hsl(43.3 96.4% 56.3%);
+    display: flex;
+    margin-top: 20px;
+}
+
+.blog-dls .btn-group {
+    width: 20rem;
+    height: 5rem;
+    color: #fff;
+    display: flexbox;
+    margin-left: 100px;
+    margin-top: 5.5rem;
+}
+
+.blog-dls .btn-group .btn-success {
+    color: #fff;
+    font-size: 22px;
+}
+
+.dropdown-menu {
+    width: 20rem;
+    height: 23rem;
+    margin-left: -200px !important;
+}
+
+.dropdown-item {
+    margin-top: 5px;
+    padding: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.blog-details {
+    width: 100rem;
+    height: 40rem;
+    display: flexbox;
+}
+
+.blog-details img {
+    width: 70rem;
+    height: 30rem;
+    float: right;
+    margin-top: 5rem;
+    margin-right: 200px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.blog-details h3 {
+    position: absolute;
+    display: flexbox;
+    font-family: 'Pacifico', cursive;
+    padding-top: 150px;
+    color: rgb(8, 87, 8);
+    margin-left: 400px;
+}
+
+.blog-details h1 {
+    position: absolute;
+    display: flexbox;
+    padding-top: 220px;
+    color: #fff;
+    line-height: 70px;
+    font-size: 3.5rem;
+    margin-left: 400px;
+}
+
+.blog-details h1 span {
+    color: rgb(8, 87, 8);
+}
+
+.blog-details p {
+    position: absolute;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    display: flexbox;
+    padding-top: 380px;
+    color: rgb(53, 47, 47);
+    margin-left: 400px;
+
+}
+
+.blog3 {
+    margin-top: 10px;
+    width: 100%;
+    height: 140px;
+    /* background-color: hsl(43.3 96.4% 56.3%); */
+    /* background-color: hsl(271.5 81.3% 55.9%); */
+}
+
+.blog3 h2 {
+    text-align: center;
+    color: hsl(24.6 95% 53.1%);
+    font-size: 50px;
+}
+
+.blog3 .btn-success {
+    display: flex;
+    margin: 10px auto;
+}
+
+.blog3 .btn-success a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.blog-contents {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    /* background-color: rgb(234, 133, 9); */
+    margin-top: 10px;
+}
+
+.blog1 {
+    width: 50%;
+    height: 500px;
+    display: flexbox;
+    text-align: center;
+}
+
+.blog1 img {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 10px;
+}
+
+.blog1 h1 {
+    width: 600px;
+    height: 50px;
+    background-color: #fff;
+    margin-top: -300px;
+    margin-left: 200px;
+    color: black;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.blog1 h2 {
+    margin-top: -450px;
+    margin-left: 300px;
+    color: #fff;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.blog2 {
+    width: 50%;
+    height: 500px;
+    display: flexbox;
+    text-align: center;
+}
+
+.blog2 img {
+    width: 80%;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 10px;
+}
+
+.blog2 h1 {
+    width: 600px;
+    height: 50px;
+    background-color: #fff;
+    margin-top: -300px;
+    margin-left: 200px;
+    color: black;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.blog2 h2 {
+    margin-top: -450px;
+    margin-left: 300px;
+    color: #fff;
+    position: absolute;
+    opacity: 0.9;
+}
+.marquee {
+    width: 184px;
+    display: grid;
+    grid-gap: 5px;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+.marquee img {
+    width: 167px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-1360%));
+    }
+}
+
+
+/* For screens up to 998px */
+@media screen and (max-width: 998px) {
+    .blog {
+      height: auto;
+    }
+  
+    .blog-dls {
+      flex-direction: column; /* Change flex-direction to vertical */
+      align-items: center; /* Center items vertically */
+      height: auto;
+    }
+  
+    .blog-dls .btn-group {
+      margin-left: 0; /* Remove left margin */
+      margin-top: 20px; /* Add top margin */
+    }
+  
+    .dropdown-menu {
+      margin-left: -200px !important; /* Remove left margin */
+      height: auto;
+    }
+  
+    .dropdown-item {
+        margin-left: 0  !important;
+        margin-top: 5px;
+        padding: 15px;
+        text-align: left;
+        color: #fff;
+    }
+  
+    .blog-details {
+      width: 100%; /* Set width to 100% */
+      margin-top: 20px; /* Add top margin */
+    }
+  
+    .blog-details img {
+      width: 100%; /* Make image width 100% of container */
+      height: auto; /* Maintain aspect ratio */
+      margin-top: 0; /* Remove top margin */
+      margin-right: 0; /* Remove right margin */
+      float: none; /* Remove float */
+      border-radius: 0; /* Remove border-radius */
+      position: relative;
+      
+    }
+  
+    .blog-details h3 {
+      margin-left: 7rem; /* Remove left margin */
+      text-align: center; /* Center text */
+      font-size: 20px;
+      position: absolute;
+      margin-top: -27rem;
+    }
+    .blog-details h1{
+      margin-left: 7rem; /* Remove left margin */
+      text-align: center; /* Center text */
+      font-size: 23px;
+      position: absolute;
+      line-height: 40px;
+      margin-top: -27rem;
+    }
+    .blog-details p{
+      margin-left: 7rem; /* Remove left margin */
+      text-align: center; /* Center text */
+      font-size: 20px;
+      position: absolute;
+      margin-top: -30rem;
+    }
+  
+    .blog3 {
+      height: auto; /* Adjust height as needed */
+    }
+  
+    .blog-contents {
+      flex-direction: column; /* Change flex-direction to vertical */
+    }
+  
+    .blog1,
+    .blog2 {
+      width: 100%; /* Set width to 100% */
+      height: auto; /* Adjust height as needed */
+      text-align: center; /* Center text */
+      padding: 20px; /* Add padding as needed */
+      margin-bottom: 20px;
+    }
+  
+    .blog1 img,
+    .blog2 img {
+      width: 100%; /* Make image width 100% of container */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0; /* Remove margins */
+      border-radius: 0; /* Remove border-radius */
+    }
+  
+    .blog1 h1,
+    .blog2 h1
+     {
+      margin: 50px; /* Remove margins */
+      padding: 10px 0; /* Add padding as needed */
+      margin-top: -15rem;
+      font-size: 30px;
+      width: 70%;
+    }
+    .blog1 h2,
+    .blog2 h2{
+    margin: 50px; /* Remove margins */
+      padding: 10px 0; /* Add padding as needed */
+      margin-top: -25rem;
+      font-size: 20px;
+    }
+  
+    .marquee {
+        width: 100px;
+        display: grid;
+        grid-gap: 1px;
+        justify-content: space-around;
+        display: inline-block;
+    }
+    
+    .marquee img {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        animation: marquee 15s linear infinite;
+    }
+  }
+
+  @media screen and (max-width: 732px){
+    .blog-details h3 {
+        margin-left: 7rem; /* Remove left margin */
+        text-align: center; /* Center text */
+        font-size: 15px;
+        position: absolute;
+        margin-top: -22rem;
+      }
+      .blog-details h1{
+        margin-left: 7rem; /* Remove left margin */
+        text-align: center; /* Center text */
+        font-size: 19px;
+        position: absolute;
+        line-height: 40px;
+        margin-top: -24rem;
+      }
+      .blog-details p{
+        margin-left: 7rem; /* Remove left margin */
+        text-align: center; /* Center text */
+        font-size: 15px;
+        position: absolute;
+        margin-top: -29rem;
+      }
+      .blog1 img,
+    .blog2 img {
+      width: 100%; /* Make image width 100% of container */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0; /* Remove margins */
+      border-radius: 0; /* Remove border-radius */
+    }
+  
+    .blog1 h1,
+    .blog2 h1
+     {
+      margin: 25px; /* Remove margins */
+      padding: 5px 0; /* Add padding as needed */
+      margin-top: -10rem;
+      font-size: 20px;
+      width: 50%;
+    }
+    .blog1 h2,
+    .blog2 h2{
+    margin: 25px; /* Remove margins */
+      padding: 5px 0; /* Add padding as needed */
+      margin-top: -15rem;
+      font-size: 17px;
+    }
+    .marquee img {
+        width: 50%; /* Make image width 100% of container */
+        height: auto; /* Maintain aspect ratio */
+        flex-direction: column;
+      }
+  }
+  

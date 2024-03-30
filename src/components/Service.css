@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Rubik+Lines&family=Rubik+Maps&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.service{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.service h1{
+    width: 55%;
+    height: 50px;
+    margin-top: 30px;
+    color: hsl(221.2 83.2% 53.3%);
+    display: flexbox;
+    text-align: end;
+}
+.service span{
+    color: hsl(333.3 71.4% 50.6%);
+}
+.service img{
+    width: 100px;
+    height: 100px;
+    display: flexbox;
+    margin-top: 0;
+    text-align: start;
+}
+.service1{
+    width: 100%;
+    height: 100rem;
+    margin-bottom: 50px;
+}
+.service1 img{
+width: 70%;
+height: 50rem;
+margin-left: 15%;
+border-radius: 20px;
+position: relative;
+}
+.background-img{
+    width: 600px;
+    height: 330px;
+    background-color: #fff;
+    margin-left: 43rem;
+    margin-top: -36rem;
+    position: absolute;
+    border-top-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    opacity: 0.6;
+}
+.background-img h4{
+    margin-top: 55px;
+    margin-bottom: 20px;
+    margin-left: 15rem;
+    color: hsl(142.8 64.2% 24.1%);
+}
+.background-img h2{
+    margin-bottom: 20px;
+    margin-left: 15rem;
+}
+.background-img h2 span{
+    margin-left: -6rem;
+}
+.background-img h3{
+    width: 180px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 15rem;
+    background-color: green;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.background-img h3 a{
+    color: #fff !important;
+    text-decoration: none;
+}
+.service2{
+    width: 70%;
+    height: 100px;
+    /* background-color: rgb(104, 236, 104); */
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+.service2 .icon-truck{
+    width: 20%;
+    height: 100px;
+    background-color: hsl(0 93.5% 81.8%);
+    margin-left: 120px;
+}
+.service2 .icon-headset{
+    width: 20%;
+    height: 100px;
+    margin-left: 20px;
+    background-color: hsl(198.6 88.7% 48.4%);
+}
+.service2 .icon-money{
+    width: 20%;
+    height: 100px;
+    margin-left: 20px;
+    background-color: hsl(43.3 96.4% 56.3%);
+}
+.service2 .icon-shield{
+    width: 20%;
+    height: 100px;
+    margin-left: 20px;
+    background-color: hsl(141.9 69.2% 58%);
+}
+.service2 i{
+    color: rgb(2, 88, 2);
+}
+.service4{
+    width: 100%;
+    height: 620px;
+    /* background-color: hsl(240 4.9% 83.9%); */
+    background-color: hsl(45.9 96.7% 64.5%);
+    margin-top: 50px;
+}
+.service4 h1{
+    text-align: center;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    color: hsl(192.9 82.3% 31%);
+    font-size: 4.5rem;
+    padding-top: 35px;
+}
+.service4 h2{
+    padding-top: 20px;
+    text-align: center;
+    color: hsl(142.1 70.6% 45.3%);
+    font-size: 3.5rem;
+    /* font-family: 'Rubik Doodle Shadow', sans-serif; */
+    font-family: 'Rubik Maps', sans-serif;
+}
+.service4 h2 span{
+    color: hsl(293.4 69.5% 48.8%);
+    /* font-family: 'Rubik Doodle Shadow', sans-serif; */
+    font-family: 'Rubik Maps', sans-serif;
+    font-size: 3.5rem;
+}
+.img{
+width: 70%;
+height: 200px;
+display: flex;
+margin-left: 10rem;
+margin-right: 10rem;
+}
+.img span img{
+    width: 250px;
+    height: 250px;
+    display: flexbox;
+    border-radius: 30rem;
+    margin-right: 80px;
+    cursor: pointer;
+}
+.img span h4{
+    width: 180px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    color: hsl(142.1 76.2% 36.3%);
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img span a{
+    text-decoration: none;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1540px){
+    .service1 .background-img {
+        width: 45%;
+        height: auto;
+        margin-left: 30rem;
+        flex-direction: column;
+    }
+    .service1 .background-img h2,h3,h4{
+        font-size: 23px;
+        flex-direction: column;
+    }
+    .service4 .img{
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img img{
+        width: 70%;
+        height: 70%;
+    }
+    .service4 span h4{
+        width: 180px;
+        height: 50px;
+        display: flex;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .service1 .background-img {
+        width: 45%;
+        height: auto;
+        margin-left: 20rem;
+        flex-direction: column;
+    }
+    .service1 .background-img h2,h3,h4{
+        font-size: 23px;
+        flex-direction: column;
+    }
+    .service4 .img{
+        width: 25%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img{
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img img{
+        width: 60%;
+        height: 60%;
+    }
+    .service4 span h4{
+        width: 170px;
+        height: 45px;
+        display: flex;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 998px) {
+    .service1 .background-img {
+        width: 70%;
+        height: auto;
+        margin-left: 10rem;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .service1 .background-img h4, h3{
+        font-size: 15px;
+        margin-left: 10rem;
+    }
+    .service1 .background-img h2{
+        font-size: 15px;
+        margin-left: 10rem;
+    }
+    .service1 .background-img span{
+        font-size: 15px;
+        margin-left: 0rem;
+    }
+    .service4 h4{
+        font-size: 1.5rem;
+    }
+    .service4 h1{
+        font-size: 2rem;
+    }
+    .service4 span{
+        font-size: 2rem;
+    }
+    .service4 .img{
+        width: 25%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img{
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img img{
+        width: 50%;
+        height: 50%;
+    }
+    .service4 span h4{
+        width: 160px;
+        height: 45px;
+        display: flex;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service2 .icon-truck{
+        margin-left: 0;
+    }
+    .service4 h1{
+        font-size: 1.5rem;
+    }
+    .service4 h2{
+        font-size: 2rem;
+    } 
+    .service4 span{
+        font-size: 0.5rem;
+    }
+    .service4 .img{
+        flex-direction: column;
+        width: 20%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img img{
+        width: 40%;
+        height: 40%;
+    }
+    .service4 span h4{
+        width: 150px;
+        height: 45px;
+        display: flex;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .service1 .background-img {
+        width: 70%;
+        height: auto;
+        margin-left: 2rem;
+        flex-direction: column;
+    }
+    .service1 .background-img h2,h3,h4{
+        font-size: 15px;
+        text-align: center;
+        flex-direction: column;
+        margin-right: 10rem;
+    }
+    .service2 .icon-truck{
+        margin-left: 0;
+    }
+    .service4 .img{
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .service4 .img img{
+        width: 40%;
+        height: 40%;
+    }
+    .service4 span h4{
+        width: 120px;
+        height: 35px;
+        display: flex;
+        font-size: 15px;
+    }
+}

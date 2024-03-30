@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.ContainerSlide{
+    width: 100%;
+    height: 950px;
+}
+.Slider{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.description{
+    width: 800px;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+}
+.description h1{
+    font-size: 60px;
+    color:rgb(222,20,196);
+}
+.description h2{
+    font-size: 50px;
+    margin-top: 100px;
+    color: rgb(2, 91, 2);
+}
+.description h3{
+    font-size: 40px;
+    color: #3f0bb0;
+    margin-top: 20px;
+}
+.carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+}
+.carousel-item span{
+    width: 5vw;
+    height: 3vw;
+    background-color: #fff;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: 2px 3px 2px black
+}
+.transparent-background{
+    height: 100vh;
+    position: absolute;
+    z-index: 998;
+    top: 30%;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(255,0,0,0) rgb(20, 122, 10));
+}
+
+
+@media (max-width: 998px) {   
+    .description {
+      width: 90%;  
+      height: auto;
+      max-width: 500px; 
+    }
+  
+    .description h1 {
+      font-size: 6vw;
+      margin-top: 25rem;  
+    }
+  
+    .description h2 {
+      font-size: 5vw; 
+      margin-top: 8vw;  
+    }
+  
+    .description h3 {
+      font-size: 4vw; 
+      margin-top: 4vw;  
+    }
+  
+    .carousel-item {
+      margin-top: 0vh;  
+    }
+  
+    .carousel-item span {
+      width: 2vw;  
+      margin-left: 2vw; 
+    }
+  }
+  
+  /* Additional media query for even smaller screens */
+  @media (max-width: 480px) {
+    .description {
+        height: auto;
+    }
+    .description h1 {
+      font-size: 6vw; 
+      margin-top: 30rem; 
+    }
+  
+    .description h2 {
+      font-size: 6vw; 
+      margin-top: 10vw;  
+    }
+  
+    .description h3 {
+      font-size: 5vw;  
+      margin-top: 6vw;  
+    }
+  
+    .carousel-item {
+      margin-top: 10vh; 
+    }
+  
+    .carousel-item span {
+      width: 5vw; 
+      margin-left: 3vw;  
+    }
+  }
