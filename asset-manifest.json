@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Grocery_Website_React/static/css/main.da71ec10.css",
-    "main.js": "/Grocery_Website_React/static/js/main.3a7c82be.js",
+    "main.js": "/Grocery_Website_React/static/js/main.bb479b6d.js",
     "static/js/453.8ab44547.chunk.js": "/Grocery_Website_React/static/js/453.8ab44547.chunk.js",
     "static/media/Fruits.jpg": "/Grocery_Website_React/static/media/Fruits.79b081fdfb81a63f1da0.jpg",
     "static/media/78nZ.gif": "/Grocery_Website_React/static/media/78nZ.d2df77eac7cb5a2b0847.gif",
@@ -19,11 +19,11 @@
     "static/media/crop2.png": "/Grocery_Website_React/static/media/crop2.6d71dc908a0f4fcd59c1.png",
     "index.html": "/Grocery_Website_React/index.html",
     "main.da71ec10.css.map": "/Grocery_Website_React/static/css/main.da71ec10.css.map",
-    "main.3a7c82be.js.map": "/Grocery_Website_React/static/js/main.3a7c82be.js.map",
+    "main.bb479b6d.js.map": "/Grocery_Website_React/static/js/main.bb479b6d.js.map",
     "453.8ab44547.chunk.js.map": "/Grocery_Website_React/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da71ec10.css",
-    "static/js/main.3a7c82be.js"
+    "static/js/main.bb479b6d.js"
   ]
 }
