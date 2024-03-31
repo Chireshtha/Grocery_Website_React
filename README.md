@@ -1,6 +1,6 @@
 # Grocery Website
 
-Welcome to Cherry Grocery Website! This application allows you to explore information about Grocery Items.
+Welcome to Cherry Grocery Website! This application allows you to explore information about Grocery Items. 
 
 ## Table of Contents
 - [About](#about)
