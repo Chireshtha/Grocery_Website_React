@@ -7,7 +7,7 @@ Welcome to Cherry Grocery Website! This application allows you to explore inform
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Development Tool](#development-tool)
-- [Deployment Link](#deploy)
+- [Deployment Link](#deployment-link)
 
 ## About
 
