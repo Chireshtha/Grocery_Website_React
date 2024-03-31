@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
-import './Home.css'
-import imageSlide from './Slidedata'
-import { useState } from 'react'
+import React, { useEffect } from 'react';
+import './Home.css';
+import { useState } from 'react';
+import imageSlide from './Slidedata';
 
 const Home = () => {
   const [currentState, setcurrentState] = useState(0);

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Blog.css';
-import BlogMenu from './BlogMenu';
 import 'bootstrap/dist/js/bootstrap.js';
 import Ads from '../Images/Ads.png';
 import Spinach from '../Images/Spinach.jpg';
 import Vegetable from '../Images/vegetable.jpg';
+import BlogMenu from './BlogMenu';
+
 
 const Blog = () => {
   return (
