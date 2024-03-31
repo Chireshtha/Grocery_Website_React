@@ -24,16 +24,16 @@
 }
 .description h1{
     font-size: 60px;
-    color:rgb(222,20,196);
+    color:rgb(238, 44, 130);
 }
 .description h2{
     font-size: 50px;
     margin-top: 100px;
-    color: rgb(2, 91, 2);
+    color: rgb(3, 83, 3);
 }
 .description h3{
     font-size: 40px;
-    color: #3f0bb0;
+    color: rgb(2, 3, 129);
     margin-top: 20px;
 }
 .carousel-item{

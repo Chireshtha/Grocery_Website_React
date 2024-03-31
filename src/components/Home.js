@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (currentState === 4) {
+      if (currentState === 7) {
         setcurrentState(0)
       } else {
         setcurrentState(currentState + 1)
