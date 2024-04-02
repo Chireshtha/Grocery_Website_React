@@ -35,7 +35,7 @@ The project is developed using the following technology:
 
 ## Deployment Link
 
-You can view the project visual
+**You can view the project visual**
 
 git deployment link <[repository-url]( https://chireshtha.github.io/Grocery_Website_React/ )>  
 
