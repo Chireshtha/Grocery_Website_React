@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbarmain.css'
+import logo from '../Images/logo.bmp'
 
 const Navbarmain = () => {
     const [display, setDisplay] = useState(false);
@@ -14,7 +15,7 @@ const Navbarmain = () => {
 
             <div className='navbox'>
                 <div className='logo'>
-                    <img src='Images/logo.bmp' alt='loading' />
+                    <img src={logo} alt='loading' />
                 </div>
                 <div className={`navbox-1 ${display ? "display" : ""}`}>                
                     <Link to='/' className='text-decoration-none  white-border'><span>Home</span></Link>

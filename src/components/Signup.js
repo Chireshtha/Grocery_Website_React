@@ -10,22 +10,23 @@ const Signup = () => {
     const navigate = useNavigate();
 
     const handleInput = (e) => {
-        setValues(prev => ({ ...prev, [e.target.name]: [e.target.value] }))
+        setValues(prev => ({ ...prev, [e.target.name]: e.target.value }))
     }
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors(Validation(values));
-    
+
         if (errors.name === "" && errors.email === "" && errors.password === "") {
-            axios.post('http://localhost:5000/signup', values)  // Update the URL with your Flask server's address
+            axios.post('http://127.0.0.1:5000/signup', values)  // Update the URL with your Flask server's address
                 .then((res) => {
                     console.log("Registered Successfully", res.data);
                     navigate('/login');
                 })
-                .catch((err) => console.log(err));
+                .catch((err) => 
+                console.error("Error during registration:", err));
         }
     };
-                
+
     return (
         <div>
             <div className='d-flex justify-content-center align-items-center bg-dark vh-100'>
@@ -50,7 +51,7 @@ const Signup = () => {
                             <div className='input-group-prepend mb-2'>
                                 <span className='input-group-text'> <i className='fa fa-key'> <FaKey /> </i> </span>
                             </div>
-                            <input type='password' className='form-control mb-2' name='password' placeholder='Password' onChange={handleInput} />
+                            <input type='password' className='form-control mb-2' name='password' placeholder='Password' onChange={handleInput} autoComplete='current-password' />
                         </div>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
 

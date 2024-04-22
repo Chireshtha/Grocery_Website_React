@@ -15,6 +15,7 @@
     height: 100px;
     margin-top: 20px;
     background-color: hsl(174.7 83.9% 31.6%);
+    /* background-color: #007bb5; */
 }
 
 .container-contact h1 {
@@ -27,6 +28,7 @@
     width: 100%;
     height: 30rem;
     background-color: hsl(0, 83%, 65%);
+    /* background-color: #007bb5; */
 }
 
 .container-contact1 .container2 {
@@ -53,22 +55,34 @@
     padding-bottom: 15px;
     color: hsl(0, 83%, 65%);
 }
-
+.container-contact1 .container2 .fa-map-marker{
+    color: #007bb5;
+}
+.container-contact1 .container2 .fa-phone{
+    color: green;
+}
+.container-contact1 .container2 .fa-fax{
+    color: goldenrod;
+}
+.container-contact1 .container2 .fa-envelope{
+    color: darkmagenta;
+}
 .container-contact1 .container2 span h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     padding-bottom: 15px;
 }
 
 .container-contact1 .container2 span p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     padding-bottom: 15px;
 }
 .container-contact2{
     width: 100%;
     height: 900px;
     background-color: hsl(0, 83%, 65%);
+    /* background-color: #007bb5; */
     display: flex;
     /* margin-top: 20px; */
 }
@@ -104,17 +118,17 @@
 
 .gold img {
     margin-top: 30px;
-    width: 55%;
-    height: 105%;
+    width: 60%;
+    height: 115%;
     margin-left: 25%;
-    border-radius: 500px;
+    border-radius: 200px;
 }
 .contacts {
     margin-top: 50px;
     font-size: 30px;
     text-align: center;
     /* background-color: #fff; */
-    margin-left: 32%;
+    margin-left: 40%;
     margin-right: 32%;
 }
 

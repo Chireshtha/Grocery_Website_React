@@ -87,6 +87,7 @@ const GroceryMarket = () => {
         <BrowserRouter>
             <Navbarmain />
             <Routes>
+                <Route path='/Grocery_Website_React' element={<Home />}></Route>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/Shop' element={<Shop />}></Route>
                 <Route path='/Blog' element={<Blog />}></Route>

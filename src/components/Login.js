@@ -10,7 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleInput = (e) => {
-        setValues(prev => ({ ...prev, [e.target.name]: [e.target.value] }))
+        setValues(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
     // Update React login component
     const handleSubmit = (e) => {
@@ -18,15 +18,19 @@ const Login = () => {
         setErrors(Validation(values));
 
         if (errors.email === "" && errors.password === "") {
-            axios.post('http://localhost:5000/login', values)
+            axios.post('http://127.0.0.1:5000/login', values)
                 .then(res => {
-                    if (res.data.message === "Login successful") {
-                        navigate('/Home');
+                    if (res.data.message === 'Login successful') {
+                        console.log("loggedin Successfully", res.data);
+                        navigate('/');
                     } else {
-                        alert("Invalid email or password");
+                        alert('Invalid email or password');
                     }
                 })
-                .catch(err => console.log(err));
+                .catch(err => {
+                    console.error('Login Error:', err);
+                    alert('An error occurred during login. Please try again later.');
+                });
         }
     };
     return (

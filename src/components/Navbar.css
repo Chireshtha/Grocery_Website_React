@@ -178,7 +178,7 @@ img {
     grid-template-columns: repeat(1, minmax(200px, 500px));
     grid-gap: 50px;
     justify-content: space-around;
-    margin-top: 220px;
+    margin-top: 420px;
   }
 }
 
