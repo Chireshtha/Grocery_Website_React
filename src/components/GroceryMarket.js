@@ -7,7 +7,7 @@ import Mycart from './Mycart'
 import Login from './Login'
 import Signup from './Signup'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Loginpage from './LoginPage'
+// import Loginpage from './LoginPage'
 import Navbarmain from './Navbarmain'
 import Home from './Home'
 import Shop from './Shop'
@@ -96,8 +96,8 @@ const GroceryMarket = () => {
                 <Route path='/Aboutus' element={<Aboutus />}></Route>
                 
                 <Route path='/Login' element={<Login />}></Route>
-                <Route path='/Login' element={<Loginpage />}></Route>
-                <Route path='/' element={<Login />}></Route>
+                {/* <Route path='/Login' element={<Loginpage />}></Route>
+                <Route path='/' element={<Login />}></Route> */}
                 <Route path='/Signup' element={<Signup />}></Route>
                 <Route path='/Navbar' element={<Navbar filterItem={filterItem} menuList={menuList} />}></Route>
             </Routes>

@@ -44,11 +44,15 @@
 .navbox span{
     color: #fff;
 }
+.navbox span:hover{
+    color: #68efb9;
+    font-size: 26px;
+    transform: ease-in-out 5s;
+}
 
 .Loginbtn{
     margin-left: 100px;
     border-color: white 25px;
-
 }
 .Loginbtn .btn{
     background-color: transparent;
@@ -61,9 +65,11 @@
     color: white;
     font-size: 20px;
 }
-
-
-
+.Loginbtn strong:hover{
+    color: #7bdcb5;
+    font-size: 22px;
+    transform: ease-in-out 5s;
+}
 .menuIcon {
     display: none;
 }

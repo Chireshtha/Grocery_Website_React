@@ -235,7 +235,7 @@ const Grocerymenu = [
         id: 30,
         name: "Fish",
         category: "Protein Food",
-        image: "https://th.bing.com/th/id/OIP.cxQa6inCLVHoHQQmuU0i-wHaFX?pid=ImgDet&rs=1",
+        image: "https://www.thestatetoday.net/wp-content/uploads/sites/36/shutterstock_1511754797.jpg",
         price: 400,
         amount: 1
     },
@@ -267,7 +267,7 @@ const Grocerymenu = [
         id: 34,
         name: "Sliced Cheese",
         category: "Dairy ",
-        image: "https://dgsfrozenfoods.co.za/wp-content/uploads/2018/06/sliced-cheese-copy-768x721.jpg",
+        image: "https://www.lose-weight-with-us.com/images/american-cheese.jpg",
         price: 150,
         amount: 1
     },

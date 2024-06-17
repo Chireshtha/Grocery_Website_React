@@ -19,9 +19,6 @@ const imageSlide = [
         url: 'https://burjalmadeena.ae/wp-content/uploads/2022/07/banner-1.jpg'
     },
     {
-        url: 'https://msrfarmsindia.com/assets/images/slider/4.jpg'
-    },
-    {
         url: 'https://www.ibef.org/gulfood-2023/images/indian-millets-content-banner-2.jpg'
     }
 ]

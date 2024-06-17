@@ -15,10 +15,14 @@ const Login = () => {
     // Update React login component
     const handleSubmit = (e) => {
         e.preventDefault();
-        setErrors(Validation(values));
+        setErrors(Validation(values))
 
         if (errors.email === "" && errors.password === "") {
-            axios.post('http://127.0.0.1:5000/login', values)
+            axios.post('http://127.0.0.1:5000/login', values, {
+            headers: {
+                'Content-Type': 'application/json' // Set the Content-Type header to JSON
+            }
+        })
                 .then(res => {
                     if (res.data.message === 'Login successful') {
                         console.log("loggedin Successfully", res.data);
@@ -43,23 +47,23 @@ const Login = () => {
                             <div className='input-group-prepend mb-2'>
                                 <span className='input-group-text'> <i className='fa fa-envelope'> <FaEnvelope /> </i> </span>
                             </div>
-                            <input type='email' className='form-control mb-2' name='email' placeholder='Email' onChange={handleInput} />
+                            <input type='email' className='form-control mb-2' name='email' placeholder='Email' onChange={handleInput}  autoComplete="current-email"/>
                         </div>
                         {errors.email && <span className='text-danger'>{errors.email}</span>}
                         <div className='input-group'>
                             <div className='input-group-prepend mb-2'>
                                 <span className='input-group-text'> <i className='fa fa-key'> <FaKey /> </i> </span>
                             </div>
-                            <input type='password' className='form-control mb-2' name='password' placeholder='Password' onChange={handleInput} />
+                            <input type='password' className='form-control mb-2' name='password' placeholder='Password' onChange={handleInput} autoComplete="current-password" />
                         </div>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
                         <div>
-                            <button type='submit' className='btn btn-success mb-4 my-2 w-100 rounded-0'>
+                            <button type='submit' className='btn btn-success mb-4 my-2 w-100 rounded-0 fs-5'>
                                 <i className='fa fa-lock'> <FaLock /> </i><strong>Login</strong></button>
                         </div>
                         <div>
-                            <p className='text-center text-lg text-white'><b>Don't have an account?</b></p>
-                            <Link to='/Signup' className='btn btn-Link border w-100 rounded-0 p-3 text-white'>Create Account</Link>
+                            <p className='text-center text-lg text-white fs-5'><b>Don't have an account?</b></p>
+                            <Link to='/Signup' className='btn btn-Link border w-100 rounded-0 p-3 text-white fs-5'>Create Account</Link>
                         </div>
                     </form>
                 </div>
