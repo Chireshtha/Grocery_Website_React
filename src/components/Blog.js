@@ -11,6 +11,7 @@ const Blog = () => {
   return (
     <div className='blog'>
       <div className='blog-dls'>
+      
         <div className="btn-group">
           <button type="button" className="btn btn-success">Category</button>
           <button type="button" className="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -24,6 +25,7 @@ const Blog = () => {
             <a href='Shop.js' className="dropdown-item">Dairy</a>
           </div>
         </div>
+        
         <div className='blog-details'>
           <img src={Ads} alt='loading'/>
           <h3>Organic 100% Genuine Product</h3>
@@ -33,7 +35,6 @@ const Blog = () => {
       </div>
       <div className='blog3'>
         <h2>Our Fresh Products</h2>
-        <button className='btn btn-success'><a href='Shop.js'>Shop Now</a></button>
       </div>
 
 

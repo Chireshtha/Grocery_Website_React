@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaEnvelope, FaKey, FaLock } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import Validation from './Loginvalidation'
+import './LoginPage.css' 
 import axios from 'axios'
 const Login = () => {
 
@@ -47,14 +48,14 @@ const Login = () => {
                             <div className='input-group-prepend mb-2'>
                                 <span className='input-group-text'> <i className='fa fa-envelope'> <FaEnvelope /> </i> </span>
                             </div>
-                            <input type='email' className='form-control mb-2' name='email' placeholder='Email' onChange={handleInput}  autoComplete="current-email"/>
+                            <input type='email' className='form-control mb-2 custom-input' name='email' placeholder='Email' onChange={handleInput}  autoComplete="current-email"/>
                         </div>
                         {errors.email && <span className='text-danger'>{errors.email}</span>}
                         <div className='input-group'>
                             <div className='input-group-prepend mb-2'>
                                 <span className='input-group-text'> <i className='fa fa-key'> <FaKey /> </i> </span>
                             </div>
-                            <input type='password' className='form-control mb-2' name='password' placeholder='Password' onChange={handleInput} autoComplete="current-password" />
+                            <input type='password' className='form-control mb-2 custom-input' name='password' placeholder='Password' onChange={handleInput} autoComplete="current-password" />
                         </div>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
                         <div>

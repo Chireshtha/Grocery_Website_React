@@ -1,4 +1,3 @@
-
 const imageSlide = [
     {
         url: 'https://www-x-qianmengwang-x-com.img.addlink.cn/2018_7_26/upload/201711/mban.jpg'

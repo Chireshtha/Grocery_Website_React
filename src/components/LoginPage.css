@@ -3,3 +3,10 @@
     float: right;
     border-color: #fff;
 }
+.fa{
+    width: 37px;
+    height: 37px;
+}
+.custom-input{
+    height: 52px;
+}

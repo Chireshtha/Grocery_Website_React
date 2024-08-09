@@ -163,7 +163,7 @@ const Grocerymenu = [
         id: 21,
         name: "Rice",
         category: "Grains",
-        image: "https://th.bing.com/th/id/OIP.eFMlL1C_ZpVEwMlJIHr3zwHaFJ?pid=ImgDet&w=500&h=348&rs=1",
+        image: "https://thumbs.dreamstime.com/b/rice-seed-background-texture-grain-farm-yellow-jasmin-ripe-99159293.jpg",
         price: 200,
         amount: 1
     },

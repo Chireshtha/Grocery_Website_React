@@ -1,27 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react'; // Fixed import order and added useEffect
 import './Home.css';
-import { useState } from 'react';
 import imageSlide from './Slidedata';
 
 const Home = () => {
   const [currentState, setcurrentState] = useState(0);
-  const bgImageSlider = {
+  
+  const bgImageSlider = imageSlide.length ? {
     backgroundImage: `url(${imageSlide[currentState]?.url})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     height: '100%'
-  }
+  } : {};
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (currentState === 7) {
-        setcurrentState(0)
-      } else {
-        setcurrentState(currentState + 1)
-      }
-    }, 5000)
-    return () => clearTimeout(timer)
-  }, [currentState])
+      setcurrentState((prevState) => (prevState + 1) % imageSlide.length);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [currentState]);
 
   const goToNextSlide = (index) => {
     setcurrentState(index);
@@ -49,4 +46,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

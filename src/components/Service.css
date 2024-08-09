@@ -2,11 +2,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 .service{
     width: 100%;
     height: 100px;
     display: flex;
+    align-items: center;
 }
 .service h1{
     width: 55%;
@@ -15,6 +18,7 @@
     color: hsl(221.2 83.2% 53.3%);
     display: flexbox;
     text-align: end;
+    animation: fadeIn 1s ease-in-out;
 }
 .service span{
     color: hsl(333.3 71.4% 50.6%);
@@ -23,51 +27,64 @@
     width: 100px;
     height: 100px;
     display: flexbox;
+    border-radius: 50%;
     margin-top: 0;
     text-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: rotateIn 2s ease-out;
 }
 .service1{
     width: 100%;
     height: 100rem;
     margin-bottom: 50px;
+    position: relative;
 }
 .service1 img{
 width: 70%;
 height: 50rem;
+object-fit: cover;
 margin-left: 15%;
 border-radius: 20px;
-position: relative;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+/* position: relative; */
+animation: zoomIn 2s ease-out;
 }
 .background-img{
     width: 600px;
     height: 330px;
     background-color: #fff;
+    position: absolute;
     margin-left: 43rem;
     margin-top: -36rem;
     position: absolute;
     border-top-right-radius: 8rem;
     border-bottom-left-radius: 8rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     opacity: 0.6;
+    animation: fadeInUp 2s ease-out;
 }
 .background-img h4{
     margin-top: 55px;
     margin-bottom: 20px;
     margin-left: 15rem;
     color: hsl(142.8 64.2% 24.1%);
+    font-size: 1.5rem;
 }
 .background-img h2{
     margin-bottom: 20px;
     margin-left: 15rem;
+    font-size: 2.5rem;
 }
 .background-img h2 span{
     margin-left: -6rem;
+    color: hsl(293, 75%, 40%);
 }
 .background-img h3{
     width: 180px;
     height: 50px;
     margin-bottom: 20px;
     margin-left: 15rem;
-    background-color: green;
+    background-color: rgba(8, 219, 15, 0.929);
     text-align: center;
     margin: 20px auto;
     padding-top: 10px;
@@ -84,6 +101,26 @@ position: relative;
     display: flex;
     margin: 0 auto;
     text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.service2 div {
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+    animation: bounceIn 2s ease-out;
+}
+
+.service2 div:hover {
+    transform: scale(1.05);
 }
 .service2 .icon-truck{
     width: 20%;
@@ -110,14 +147,17 @@ position: relative;
     background-color: hsl(141.9 69.2% 58%);
 }
 .service2 i{
-    color: rgb(2, 88, 2);
+    font-size: 2rem;
+    color: hsl(0, 0%, 20%);
 }
 .service4{
     width: 100%;
     height: 620px;
-    /* background-color: hsl(240 4.9% 83.9%); */
+    /* background-color: hsl(334, 96%, 51%); */
     background-color: hsl(45.9 96.7% 64.5%);
     margin-top: 50px;
+    text-align: center;
+    position: relative;
 }
 .service4 h1{
     text-align: center;
@@ -125,6 +165,7 @@ position: relative;
     color: hsl(192.9 82.3% 31%);
     font-size: 4.5rem;
     padding-top: 35px;
+    animation: fadeIn 2s ease-out;
 }
 .service4 h2{
     padding-top: 20px;
@@ -133,6 +174,7 @@ position: relative;
     font-size: 3.5rem;
     /* font-family: 'Rubik Doodle Shadow', sans-serif; */
     font-family: 'Rubik Maps', sans-serif;
+    margin-bottom: 30px;
 }
 .service4 h2 span{
     color: hsl(293.4 69.5% 48.8%);
@@ -147,6 +189,25 @@ display: flex;
 margin-left: 10rem;
 margin-right: 10rem;
 }
+.img span {
+    width: 500px;
+    height: 400px;
+    padding-top: 30px;
+    padding-right: 10px;
+    position: relative;
+    margin-right: 55px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: zoomIn 2s ease-out;
+}
+
+.img span:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .img span img{
     width: 250px;
     height: 250px;
@@ -154,14 +215,20 @@ margin-right: 10rem;
     border-radius: 30rem;
     margin-right: 80px;
     cursor: pointer;
+    object-fit: cover;
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+.img span:hover img {
+    transform: scale(1.1);
 }
 .img span h4{
-    width: 180px;
+    width: 77%;
     height: 50px;
-    background-color: #fff;
     text-align: center;
     color: hsl(142.1 76.2% 36.3%);
-    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 50px;
     margin-top: 10px;
     padding-top: 10px;
     border-radius: 10px;
@@ -170,6 +237,65 @@ margin-right: 10rem;
 .img span a{
     text-decoration: none;
 }
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 
 
 /* Media queries */

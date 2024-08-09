@@ -5,9 +5,9 @@
   font-family: "Lato", sans-serif;
 }
 
-body{
-    /* background-color: orange; */
-    /* background-color: hsl(271.5 81.3% 55.9%); */
+body {
+  /* background-color: orange; */
+  /* background-color: hsl(271.5 81.3% 55.9%); */
 }
 
 .card-container {
@@ -25,6 +25,16 @@ body{
   grid-template-columns: repeat(5, minmax(200px, 350px));
   grid-gap: 5px;
   justify-content: space-around;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card-container {
@@ -35,6 +45,12 @@ body{
   justify-content: space-around;
   align-items: flex-start;
   height: 500px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
 }
 
 .card-container img {
@@ -50,27 +66,17 @@ body{
   z-index: 1;
   margin-top: 4rem;
   /* box-shadow: 0 0 5px rgba(75, 75, 75, 0.07); */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
   display: inline-block;
   /* background-color: hsl(328.6 85.5% 70.2%); */
 }
-
-/* .card-number {
-  margin-top: 15px;
-}
-
-.card-circle {
-  border: 1px solid #aaa;
-  border-radius: 50%;
-  display: inline-block;
-  line-height: 22px;
-  font-size: 12px;
-  height: 25px;
-  text-align: center;
-  width: 25px;
-} */
 
 .card-name {
   display: block;
@@ -81,7 +87,6 @@ body{
   letter-spacing: 0.5px;
   margin: -20px 0 0 -5px;
 }
-
 
 .card-category {
   display: inline-block;
@@ -118,6 +123,7 @@ body{
   border: 1px solid #aaa;
   padding: 7px 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .card-tag2 {
@@ -127,6 +133,7 @@ body{
   border: 1px solid #aaa;
   padding: 7px 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .card-tag1:hover {
@@ -142,6 +149,11 @@ body{
 .card-media {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-media:hover {
+  transform: scale(1.1);
 }
 
 img {
@@ -155,6 +167,7 @@ img {
   color: green;
   margin-top: 8rem;
   position: absolute;
+  transition: color 0.3s ease-in-out;
 }
 
 .card-price:hover {
@@ -182,10 +195,8 @@ img {
   }
 }
 
+/* Navbar and Button Styles */
 
-
-
-/* ----------------- */
 .navbar {
   padding-top: 5px;
   text-align: center;
@@ -207,6 +218,7 @@ img {
   height: 5rem;
   border-radius: 30rem !important;
 }
+
 .btn-light {
   border: none;
   /* min-width: 6rem; */
@@ -219,6 +231,7 @@ img {
   transition: all 300ms ease-out;
   text-transform: capitalize;
   color: white;
+  position: relative;
 }
 
 .btn-light:last-child {
@@ -247,17 +260,17 @@ img {
   display: inline-block;
   color: rebeccapurple;
   position: absolute;
-  transform: translatey(10px);
+  transform: translateY(10px);
   opacity: 0;
   transition: all 200ms ease-out;
 }
 
 .btn-light--active:after {
   opacity: 1;
-  transform: translatey(-2px);
+  transform: translateY(-2px);
 }
 
-@media (max-width: 998px){
+@media (max-width: 998px) {
   .navbar {
     padding-top: 2.5px;
     text-align: center;
@@ -266,7 +279,7 @@ img {
     margin-top: 12.5px;
     /* background-color: orange; */
   }
-  
+
   .navbar h1 {
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -279,13 +292,14 @@ img {
     border-radius: 15rem !important;
   }
 }
-@media (max-width: 400px){
+
+@media (max-width: 400px) {
   .navbar {
     padding-bottom: 2.5px;
     font-size: 20px;
     margin-top: 12.5px;
   }
-  
+
   .navbar h1 {
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -297,8 +311,7 @@ img {
     height: 3rem;
     border-radius: 15rem !important;
   }
-  .btn-group button{
+  .btn-group button {
     width: 20px;
   }
 }
-
