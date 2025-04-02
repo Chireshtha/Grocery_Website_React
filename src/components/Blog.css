@@ -73,9 +73,9 @@ body {
 }
 
 .dropdown-item:hover {
-  background: hsl(43.3 96.4% 46.3%);
+  background: hsl(44, 69%, 87%);
 }
-
+ 
 .blog-details {
   width: 100rem;
   height: 40rem;

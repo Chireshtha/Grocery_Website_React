@@ -66,7 +66,7 @@ const Contact = () => {
             <i className='fa fa-envelope'><FaEnvelope /> </i>
             <h1>EMAIL</h1>
             <p>
-              chire14vramirthy@gmail.com
+              Chireshtha@gmail.com
             </p>
           </span>
         </div>
@@ -87,7 +87,7 @@ const Contact = () => {
           </div>
           <div className="contacts">
             <a href="https://www.facebook.com/" className="fa fa-facebook" target="_blank" rel="noreferrer"><FaFacebook /> </a>
-            <a href="https://www.twitter.com" className="fa fa-twitter" target="_blank" rel="noreferrer"><FaTwitter /></a>
+            <a hr ef="https://www.twitter.com" className="fa fa-twitter" target="_blank" rel="noreferrer"><FaTwitter /></a>
             <a href="https://www.instagram.com" className="fa fa-instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
             <a href="https://www.linkedin.com" className="fa fa-linkedin" target="_blank" rel="noreferrer"><FaLinkedin /></a>
           </div>

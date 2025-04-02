@@ -78,11 +78,9 @@ const GroceryMarket = () => {
             tempArr[ind].amount = 1;
         setCart([...tempArr])
     }
-
     const handleOrder = (OrderItem) => {
         alert("Item Ordered Successfully")
     }
-
     return (
         <BrowserRouter>
             <Navbarmain />
@@ -94,31 +92,23 @@ const GroceryMarket = () => {
                 <Route path='/Service' element={<Service />}></Route>
                 <Route path='/Contact' element={<Contact />}></Route>
                 <Route path='/Aboutus' element={<Aboutus />}></Route>
-                
+
                 <Route path='/Login' element={<Login />}></Route>
                 {/* <Route path='/Login' element={<Loginpage />}></Route>
                 <Route path='/' element={<Login />}></Route> */}
                 <Route path='/Signup' element={<Signup />}></Route>
                 <Route path='/Navbar' element={<Navbar filterItem={filterItem} menuList={menuList} />}></Route>
             </Routes>
-
-            <Cart size={cart.length} setShow={setShow} handleChange={handleChange} handleOrder={handleOrder} /> 
-
-
-
+            <Cart size={cart.length} setShow={setShow} handleChange={handleChange} handleOrder={handleOrder} />
             {
-                show ? <Shop handleClick={handleClick} /> && <GroceryMenucard menuData={menuData} handleClick={handleClick} handleOrder={handleOrder} /> : <Mycart cart={cart} setCart={setCart} handleChange={handleChange} handleOrder={handleOrder} />  
+                show ? <Shop handleClick={handleClick} /> && <GroceryMenucard menuData={menuData} handleClick={handleClick} handleOrder={handleOrder} /> : <Mycart cart={cart} setCart={setCart} handleChange={handleChange} handleOrder={handleOrder} />
             }
-
-
             {
                 warning && <div className='alert alert-danger'>
                     Item has been Already Added
                 </div>
             }
         </BrowserRouter>
-        
-
     );
 }
 
