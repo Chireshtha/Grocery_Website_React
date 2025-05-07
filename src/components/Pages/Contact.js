@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Contact.css'
+import '../Styles/Contact.css'
 import Gold from '../Images/Freshmarket.jpg';
 import { FaMapMarkerAlt, FaPhoneAlt, FaFax, FaEnvelope, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import axios from 'axios';
@@ -87,7 +87,7 @@ const Contact = () => {
           </div>
           <div className="contacts">
             <a href="https://www.facebook.com/" className="fa fa-facebook" target="_blank" rel="noreferrer"><FaFacebook /> </a>
-            <a hr ef="https://www.twitter.com" className="fa fa-twitter" target="_blank" rel="noreferrer"><FaTwitter /></a>
+            <a href="https://www.twitter.com" className="fa fa-twitter" target="_blank" rel="noreferrer"><FaTwitter /></a>
             <a href="https://www.instagram.com" className="fa fa-instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
             <a href="https://www.linkedin.com" className="fa fa-linkedin" target="_blank" rel="noreferrer"><FaLinkedin /></a>
           </div>

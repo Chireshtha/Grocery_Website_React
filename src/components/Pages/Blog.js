@@ -1,5 +1,5 @@
 import React from 'react';
-import './Blog.css';
+import '../Styles/Blog.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import Ads from '../Images/Ads.png';
 import Spinach from '../Images/Spinach.jpg';

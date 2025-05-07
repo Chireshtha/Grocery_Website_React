@@ -1,4 +1,4 @@
-import GroceryMarket from "./components/GroceryMarket";
+import GroceryMarket from "./components/Pages/GroceryMarket";
 
 
 function App() {

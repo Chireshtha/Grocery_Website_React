@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Mycart.css'
+import '../Styles/Mycart.css'
 import 'bootstrap/dist/css/bootstrap.css';
 
 

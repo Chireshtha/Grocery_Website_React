@@ -1,5 +1,5 @@
 import React from 'react';
-import './Service.css';
+import '../Styles/Service.css';
 import Gif from '../Images/78nZ.gif';
 import walpaper5 from '../Images/walpaper5.jpg';
 import Fruits from '../Images/Fruits.jpg';

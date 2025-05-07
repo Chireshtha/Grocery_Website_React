@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FaEnvelope, FaKey, FaLock } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
-import Validation from './Loginvalidation'
-import './LoginPage.css' 
+import Validation from '../Validation/Loginvalidation'
+import '../Styles/LoginPage.css' 
 import axios from 'axios'
 const Login = () => {
 

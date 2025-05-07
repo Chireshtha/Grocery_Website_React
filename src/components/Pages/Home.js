@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'; // Fixed import order and added useEffect
-import './Home.css';
-import imageSlide from './Slidedata';
+import '../Styles/Home.css';
+import imageSlide from '../API/Slidedata';
 
 const Home = () => {
   const [currentState, setcurrentState] = useState(0);

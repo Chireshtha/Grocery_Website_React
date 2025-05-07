@@ -1,5 +1,5 @@
 import React from 'react'
-import Grocerymenu from './GroceryItems'
+import Grocerymenu from '../API/GroceryItems'
 import GroceryMenucard from './GroceryMenucard'
 
 const Shop = ({ handleClick }) => {

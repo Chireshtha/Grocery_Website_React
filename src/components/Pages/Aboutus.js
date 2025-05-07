@@ -1,5 +1,5 @@
 import React from 'react'
-import './Aboutus.css'
+import '../Styles/Aboutus.css'
 import Organic from '../Images/organic.jpg'
 import Apple1 from '../Images/Apple1.jpg'
 import crop2 from '../Images/crop2.png'

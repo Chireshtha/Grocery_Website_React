@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cart.css'
+import '../Styles/Cart.css'
 import { FaCartPlus } from 'react-icons/fa'
 
 

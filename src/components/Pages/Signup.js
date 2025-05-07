@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaRegUser, FaEnvelope, FaKey, FaUnlock } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
-import Validation from './Signupvalidation'
+import Validation from '../Validation/Signupvalidation'
 import axios from 'axios'
 
 const Signup = () => {
